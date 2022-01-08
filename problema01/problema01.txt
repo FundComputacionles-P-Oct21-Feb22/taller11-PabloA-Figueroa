@@ -1,0 +1,50 @@
+Generar un procedimiento para calcular el valor de la planilla de luz y otro procedimiento para calcular el valor 
+del predio de un bien inmueble. Cada procedimiento debe tener 2 parámetros (tipo cadena para nombre del cliente, cédula del cliente).
+1. Inicio
+2. funcion principal ()()
+3.   nombre, x(30)[(A-Z), (a-z},(BS}]
+4.   cedula, x(30)[{A-z}, (a-z},{BS}, {0-n}
+6.   opcion, i [0-n]
+7.   Escribir "Ingrese su nombre"   
+8.   Leer nombre
+9.   Escribir "Ingrese su  cédula"
+10.  Leer cedula
+11.  Escribir "Ingrese 1 para calcular la planilla de luz o 2 para calcular el valor del inmueble"
+12.  lea opcion 
+13.  Si (opcion == 1) entonces 
+14.   presentar <-- calcularValorLuz (nombre, cedula)
+15.     Caso Contrario 
+16.       Si (opcion == 2) entonces 
+17.         presentar <-- calcularPredio (nombre, cedula)
+18.           Caso Contrario 
+19.             presentar <--  "error"
+20.  Fin_Si
+21.  Escribir (presentar)
+21. fin funcion principal
+
+22. funcion calcularValorLuz (nombre, x; cedula, x)  x
+23.   kilovatio, d [0-n]
+24.   p, d[0,n]
+25.   gastokilovatio, d [0-n]
+26.   cadena, x(100)[{A-Z}, {a-z},{BS}, (0-n}<-- " "
+27.   Escribir "Ingrese el valor del kilovatio"
+28.   Leer kilovatio
+29.   Escribir "Ingrese el número de kilovatios en el mes"
+30.   Leer gastokilovatio
+31.   p <-- kilovatio * gastokilovatio
+32.   cadena <-- "Cliente " + nombre " con cedula " + cedula " debe cancelar el valor de $" + p
+33.   return cadena
+34. fin funcion calcularValorLuz
+
+36. funcion calcularPredio (nombre, x; cedula, x)  x
+37.   inmueble, d[0-n]
+38.   cadena, x(100)[{A-Z}, {a-z},{BS}, {0-n} <-- " "
+39.   Escribir "Ingrese el valor del inmueble"
+40.   Leer inmueble
+41.   P, i [0-n]
+42.   p <-- inmueble
+43.   cadena <-- "Cliente " + nombre " con cedula " + cedula " tiene un bien inmueble valorado en $" + inmueble + " y tiene que pagar de predio de $" + p + "."
+44.   return cadena
+45. fin funcion calcularPredio
+
+46.Fin
